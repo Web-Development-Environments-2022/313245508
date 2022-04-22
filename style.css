@@ -117,7 +117,36 @@ details p {
     display: table; 
   }
 
-.qr-code {
+.flex {
 	display: flex;
 	justify-content: center;
   }
+
+.likes{
+	flex-direction: column;
+}
+
+  .message {
+	width: 300px;
+	height: 200px;
+}
+
+.message ::placeholder {
+	color: #ccc;
+}
+
+.submit-button {
+    border-radius: 8%;
+    width: 80px;
+    height: 25px;
+    background-color: dodgerblue;
+    color: black;
+	font-size: 18px;
+    border: none;
+}
+
+
+.text-input {
+	margin: 5px 0 5px 0;
+}
+

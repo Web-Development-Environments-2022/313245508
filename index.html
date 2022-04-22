@@ -2,6 +2,16 @@
 <html>
 
 <head>
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script>
+    tinymce.init({
+      selector: "#textarea",
+      plugins: "emoticons",
+      toolbar: "emoticons",
+      toolbar_location: "bottom",
+      menubar: false
+    });
+  </script>
 <link rel="stylesheet" type="text/css" href="style.css" />
 <title>אתר לגיל השלישי</title>
 </head>
@@ -31,9 +41,8 @@
 <br>
 Freeman was married to Jeanette Adair Bradshaw from October 22, 1967, until November 18, 1979, and subsequently married Myrna Colley-Lee on June 16, 1984. The couple separated in December 2007 and divorced on September 15, 2010. Freeman has four children: Alfonso, Deena, Morgana, and Saifoulaye. Freeman and Colley-Lee adopted Freeman's step-granddaughter from his first marriage, E'dena Hines, and raised her together. On August 16, 2015, 33-year old Hines was murdered in New York City
 </p>
+
 </section>
-
-
 
 <section id="photos" class="section">
 <h1>My Photos</h1>
@@ -78,13 +87,21 @@ Freeman was married to Jeanette Adair Bradshaw from October 22, 1967, until Nove
   <iframe width="560" height="315" src="https://www.youtube.com/embed/pW8W2SCK1fw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </div>
-</section>
 
+</section>
 
 <section id="like" class="section">
 <h1>Give me a Like</h1>
+<div class="flex likes">
 <h3>On facebook:</h3>
-<div class="fb-like" data-href="https://www.facebook.com/MorganFreeman" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
+<div class="fb-like likes" 
+data-href="https://www.facebook.com/MorganFreeman"
+data-width=""
+data-layout="standard" 
+data-action="like" 
+data-size="large" 
+data-share="true">
+</div>
 <h3>On twitter</h3>
 <a href="https://twitter.com/morgan_freeman?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @morgan_freeman</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -158,20 +175,15 @@ View this post on Instagram
 </a>
 <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/Cbp9teVs218/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Morgan Freeman (@morganfreeman)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js">
 </script>
+</div>
 </section>
-
 
 <section id="qrcoder" class="section">
 <h1>Scan my code</h1>
-
-
-<div class="qr-code">
-  <img src="qr-code.png" alt="qr-code">
-</div>    
-
-
+<div class="flex">
+<img src="qr-code.png" alt="qr-code">
+</div>
 </section>
-
 
 <section id="spa" class="section">
 
@@ -179,24 +191,38 @@ View this post on Instagram
 <div>
   <details>
     <summary>
-      What is the differences between web1, web2 and web3 ?
+      What is the differences between web1.0, web2.0 and web3.0 ?
     </summary>
-    <p>Web1 has static (read-only) web pages, web2 has dynamic web pages that respond to user input (read-write), web3 is read-write-execute  </p>
+    <p>Web1.0 has static (read-only) web pages, web2.0 has dynamic web pages that respond to user input (read-write), web3.0 is read-write-execute  </p>
+    <p>Web1.0 was all about reading and getting information. Web2.0 was all about reading and writing, so social platforms could be created and get larger due to users who published their content. Web3.0 is all about reading, writing and owning. Owning is achieved through NFTs or tokens, which can be traded or kept for access purpose.</p>
+    <p>Advertising also changed throughout the years and the development of the web. Web1.0 had mostly banner advertising that would show up on the page. Web2.0 introduced interactive advertising - advertising where the user would interact with the advertisment (like a playable small game). Web3.0 is all about behavioural advertising - learning the behaviour and interests of the user to create a personalized advertisment experience. </p>
   </details>
   <details>
     <summary>
-      Explain this differences
+      Example of these differences between web1 and web2:
     </summary>
-    <p>Web1 is only text or graphics based on flash that only the website owner can change. In web2, there are web pages that can be interacted and changed via users (like forums), it has wikis, videos and podcasts. Web3 has the potential for multi-user to join a shared environment, and to integrate games and apps in websites</p>
-    <p>Web1 - Companies own the websites and publish the content, Web2 - People owns the website and publish content for other people to consume, Web3 - People build applications that other people can interact with</p>
+    <p>In web1.0 you would go on a website and see banner ads of the companies the website owner decided to promote, without any filter. That means you could get an ad about female products, altought you are a male. In web3.0, the ads that you see are more relevant for your profile. That means you won't see ads that don't relate to you, and you will probably get ads about topics you have searched before. For example if you searched for a flight to New York, you probably will get ads about hotels or attractions in New York. This means that different people get different ads on the same website, because they are different people and have different interests.</p>
   </details>
 </div>
-</section>
 
-<section id="contact" class="section">
-<h1>Contact me</h1>
 </section>
+  <section id="contact" class="section">
+  <h1>Contact me</h1>
+  <form action="mailto:elbamit@hotmail.com" method="post" enctype="text/plain">
+    <label for="email">E-mail</label>
+    <br>
+    <input class="text-input" type="email" name="My email address">
+    <br>
+    <label>Message</label>
+    <br>
+    <textarea id="textarea" class=" text-input message" placeholder="Write your message here.." name="My message"></textarea>
+    <br>
 
+    <button class="submit-button" type="submit">
+      Send
+    </button>
+  </form>
+  </section>
 
 <script type="text/javascript">
 $(function(){

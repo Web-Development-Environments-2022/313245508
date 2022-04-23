@@ -150,3 +150,12 @@ details p {
 	margin: 5px 0 5px 0;
 }
 
+
+.circle img {
+	transition: 1s ease;
+}
+	
+.circle img:hover {
+	border-radius:50%;
+	transition: 1s ease;
+}

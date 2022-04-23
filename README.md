@@ -13,5 +13,4 @@ First assignment of the course - make a website for the elderly. I choose to mak
 * Contact me: option to send an email with emojis to my email address
 
 
-
-
+# ENJOY :)

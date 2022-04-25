@@ -1,8 +1,10 @@
 # Web-Development-Environments-2022-BGU - Assignment 1
 First assignment of the course - make a website for the elderly. I choose to make it on an older character that I love, Morgan Freeman.
 
-## Website url - https://web-development-environments-2022.github.io/313245508/
+## Name - Amit Elbaz
 ## ID - 313245508
+## Website url - https://web-development-environments-2022.github.io/313245508/
+
 
 ## The website contains the following:
 * About me: background about Morgan Freeman
